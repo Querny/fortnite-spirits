@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Чек-лист духов Fortnite из обновления v42.30 (1 октября 2026, Fortnitemares, Chapter 7 Season 4 «Override»). Отмечай найденных духов и финиши — прогресс сохраняется в браузере.">
+<title>Духи Fortnite — Fortnitemares 2026 · чек-лист</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffb347'/%3E%3Cstop offset='1' stop-color='%23b45cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23090614'/%3E%3Cpath d='M32 10c9 6 14 13 14 21 0 8-6 15-14 15s-14-7-14-15c0-8 5-15 14-21z' fill='url(%23g)'/%3E%3Ccircle cx='26' cy='30' r='3' fill='%23120a22'/%3E%3Ccircle cx='38' cy='30' r='3' fill='%23120a22'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="aurora" aria-hidden="true">
+  <span class="aurora__blob aurora__blob--1"></span>
+  <span class="aurora__blob aurora__blob--2"></span>
+  <span class="aurora__blob aurora__blob--3"></span>
+  <span class="aurora__grid"></span>
+</div>
+
+<header class="topbar">
+  <a class="brand" href="#top">
+    <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><linearGradient id="bm" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffc45c"/><stop offset="1" stop-color="#b45cff"/>
+      </linearGradient></defs>
+      <path d="M20 3c7 5 11 10.5 11 17 0 7.2-4.9 12-11 12S9 27.2 9 20C9 13.5 13 8 20 3z" fill="url(#bm)"/>
+      <ellipse cx="16" cy="19" rx="2.2" ry="2.8" fill="#0a0614"/>
+      <ellipse cx="24" cy="19" rx="2.2" ry="2.8" fill="#0a0614"/>
+    </svg>
+    <span class="brand__text">
+      <strong>Spiritdex</strong>
+      <small>Fortnitemares 2026</small>
+    </span>
+  </a>
+  <nav class="topbar__nav" aria-label="Разделы">
+    <a href="#guide">Как это работает</a>
+    <a href="#checklist">Чек-лист</a>
+    <a href="#about">Источники</a>
+  </nav>
+  <div class="topbar__progress" title="Найдено духов">
+    <span id="miniFound">0</span><i>/</i><span>5</span>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">
+        <span class="dot" aria-hidden="true"></span>
+        Chapter 7 · Season 4 «Override» · обновление v42.30
+      </p>
+      <h1>Духи <span class="grad">Fortnitemares 2026</span></h1>
+      <p class="lead">
+        Чек-лист духов, которые появились в Fortnite <strong>1 октября 2026 года</strong> вместе с
+        хэллоуинским обновлением v42.30. Отмечай тех, кого нашёл и вынес, собирай финиши —
+        прогресс сохраняется прямо в браузере.
+      </p>
+      <div class="hero__stats">
+        <div class="stat"><b>5</b><span>духов</span></div>
+        <div class="stat"><b>31</b><span>финиш</span></div>
+        <div class="stat"><b>1&nbsp;окт</b><span>старт сезона</span></div>
+        <div class="stat"><b>2</b><span>волны ивента</span></div>
+      </div>
+    </div>
+
+    <aside class="progress-card" aria-label="Общий прогресс">
+      <div class="ring-wrap">
+        <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
+          <defs>
+            <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffc45c"/>
+              <stop offset="0.55" stop-color="#b45cff"/>
+              <stop offset="1" stop-color="#41e6d0"/>
+            </linearGradient>
+          </defs>
+          <circle class="ring__bg" cx="60" cy="60" r="52"/>
+          <circle class="ring__fg" id="ringFg" cx="60" cy="60" r="52"/>
+        </svg>
+        <div class="ring-wrap__label">
+          <b id="ringPercent">0%</b>
+          <span>собрано</span>
+        </div>
+      </div>
+      <div class="progress-card__body">
+        <p class="progress-card__count"><b id="foundCount">0</b> из 5 духов найдено</p>
+        <div class="bar"><span id="barFill"></span></div>
+        <p class="progress-card__sub"><span id="finishCount">0</span> / 31 финишей отмечено</p>
+        <div class="progress-card__actions">
+          <button class="btn btn--ghost" id="resetBtn" type="button">Сбросить прогресс</button>
+        </div>
+        <p class="progress-card__hint" id="savedHint">Изменения сохраняются автоматически</p>
+      </div>
+    </aside>
+  </section>
+
+  <div class="notice">
+    <span class="notice__icon" aria-hidden="true">⚠</span>
+    <p>
+      <strong>Сезон уже в архиве.</strong> 31 октября 2026 «Override» завершился, и 1 ноября стартовал
+      мини-сезон Treasure Hunters. Духи Fortnitemares больше не выпадают в бою, но остаются в твоём
+      <em>Sprite Garden</em> — отмечай всё, что успел вынести.
+    </p>
+  </div>
+
+  <!-- GUIDE -->
+  <section class="section" id="guide">
+    <header class="section__head">
+      <p class="eyebrow">Коротко о механике</p>
+      <h2>Что такое духи в Fortnite</h2>
+      <p class="section__lead">
+        Духи (Sprites) — маленькие компаньоны, которых находишь в сундуках и носишь за спиной.
+        Каждый даёт свою способность, качается до 5 уровня и существует в нескольких вариантах-финишах.
+      </p>
+    </header>
+
+    <div class="guide-grid">
+      <article class="guide-card">
+        <span class="guide-card__num">01</span>
+        <h3>Нашёл ≠ забрал</h3>
+        <p>
+          Дух считается твоим только после <strong>выноса</strong>: подойди к точке эвакуации
+          (Extraction Site) или используй Portable Extractor. Если тебя устранят раньше — дух пропадёт.
+        </p>
+      </article>
+      <article class="guide-card">
+        <span class="guide-card__num">02</span>
+        <h3>Уровни и мастерство</h3>
+        <p>
+          Опыт духа капает за сундуки (~75), устранения (~200) и повторный вынос (~200). Мастерство
+          засчитывается, когда выносишь духа на <strong>5 уровне</strong>. По понедельникам
+          Mastery Mondays дают ×2 опыта.
+        </p>
+      </article>
+      <article class="guide-card">
+        <span class="guide-card__num">03</span>
+        <h3>Финиши</h3>
+        <p>
+          Один и тот же дух бывает в разных финишах — Normal, Gold, Cheatmaster, Loot Hacker,
+          Bounty Hunter, Trick-or-Treat. Каждый финиш добавляет небольшой бонус к основной способности.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CHECKLIST -->
+  <section class="section" id="checklist">
+    <header class="section__head section__head--row">
+      <div>
+        <p class="eyebrow">Твоя коллекция</p>
+        <h2>Чек-лист духов</h2>
+        <p class="section__lead">
+          Нажми на карточку или на кнопку «Нашёл», чтобы отметить духа. Внутри карточки можно
+          отдельно отметить финиши, которые у тебя есть.
+        </p>
+      </div>
+      <div class="filters" role="group" aria-label="Фильтр духов">
+        <button class="chip is-active" data-filter="all" type="button" aria-pressed="true">Все</button>
+        <button class="chip" data-filter="found" type="button" aria-pressed="false">Найденные</button>
+        <button class="chip" data-filter="missing" type="button" aria-pressed="false">Не найденные</button>
+      </div>
+    </header>
+
+    <div class="grid" id="spriteGrid"><!-- карточки рендерит app.js --></div>
+
+    <p class="empty" id="emptyState" hidden>Здесь пока пусто — под этот фильтр духов нет.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <header class="section__head">
+      <p class="eyebrow">Дисклеймер</p>
+      <h2>Откуда данные</h2>
+      <p class="section__lead">
+        Сайт — фанатский и не связан с Epic Games. Наборы финишей и хотспоты собраны из открытых
+        трекеров и гайдов; Epic не публикует точные проценты дропа.
+      </p>
+    </header>
+    <ul class="sources">
+      <li><a href="https://fnsprites.app/fortnitemares-sprites" target="_blank" rel="noopener noreferrer">FN Sprite Tracker — Fortnitemares 2026 Sprites</a></li>
+      <li><a href="https://fnsprites.app/sprites" target="_blank" rel="noopener noreferrer">FN Sprite Tracker — полный список духов и механика</a></li>
+      <li><a href="https://estnn.com/fortnite-chapter-7-season-4-end-date-mini-season-chapter-8/" target="_blank" rel="noopener noreferrer">ESTNN — таймлайн Season 4 «Override» и даты v42.30</a></li>
+      <li><a href="https://tech.yahoo.com/gaming/articles/fortnite-fortnitemares-sprites-abilities-them-095916743.html" target="_blank" rel="noopener noreferrer">Yahoo Tech — способности духов Fortnitemares</a></li>
+      <li><a href="https://fortnitespritetracker.org/checklist-sprites-fortnite/" target="_blank" rel="noopener noreferrer">Fortnite Sprite Tracker — чек-лист и редкости</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Сделано для игроков · данные на 2 ноября 2026</p>
+  <p class="footer__muted">Fortnite и все связанные названия — торговая марка Epic Games, Inc.</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="confetti" id="confetti" aria-hidden="true"></div>
+
+<noscript>
+  <p class="noscript">Для чек-листа нужен JavaScript — включи его, пожалуйста.</p>
+</noscript>
+<script src="app.js"></script>
+</body>
+</html>
